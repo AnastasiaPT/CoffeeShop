@@ -1,0 +1,20 @@
+.coffee-list-item{
+    width: 220px;
+    height: 240px;
+}
+
+.coffee-img{
+  background: url("../img/Mask Group-2.jpg");
+  background-size: cover;
+  width: 167px;
+  height: 115px;
+  margin: 10px, 10px, 10px,10px
+}
+
+.list-group-item-label{
+    text-align: center;
+}
+
+.item-price{
+    text-align: right;
+}

@@ -1,0 +1,25 @@
+.our-best-page{
+    background: url(../img/Mask\ Group.jpg);
+    display: block;
+    margin: 1% auto;
+    height: 495px;
+    width: 1440px;
+    padding: 70px;
+}
+
+.black-text-best{
+    display: block;
+    margin: 1% auto;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+}
+
+.container-our-best{
+    display: flex;
+    margin: 1% auto;
+    width: 500px;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+}

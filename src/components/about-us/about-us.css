@@ -1,0 +1,36 @@
+.about-us-page{
+    height :520px;
+    width: 1440px;
+    padding: 50px;
+}
+
+.about-text{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 590px;
+    height: 223px; 
+}
+
+.black-text-context{
+    display: block;
+    margin: 1% auto;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+}
+.black-text{
+    display: block;
+    margin: 1% auto;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+}
+
+.rectangle-logo-about-us{
+    background: url("../img/Beans logo-1.svg");
+    display: block;
+    margin: 1% auto; 
+    height: 29.5px;
+    width: 200px;
+}
