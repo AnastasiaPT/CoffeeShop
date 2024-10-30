@@ -1,12 +1,10 @@
+import CoffeeBtn from "../coffee-btn/coffee-btn";
 import "./footer.css";
 
 const Footer = () => {
     return (
         <div className="footer">
-            <div className = "Logo-beans"></div>
-            <button className="btn btn-light">Coffee house</button>
-            <button className="btn btn-light">Our coffee</button>
-            <button className="btn btn-light">For your pleasure</button>
+            <CoffeeBtn color={"black"}/>
         </div>
     )
 }

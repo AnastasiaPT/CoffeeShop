@@ -26,7 +26,7 @@ class App extends Component {
             term: '',
             filterUp: 'all',
             modalOn: false,
-            CoffeeHouse: false,
+            CoffeeHouse: true,
             OurCoffee: true,
             Plesure: false
         }
@@ -81,8 +81,9 @@ class App extends Component {
                     </div>
                 
                    <CoffeeList  data={VisiblLevelUpData}/>
-                   <Footer/> 
+                {Plesure && <div></div>}   
                 </div>}
+                <Footer/> 
             </div>
         );
     }
