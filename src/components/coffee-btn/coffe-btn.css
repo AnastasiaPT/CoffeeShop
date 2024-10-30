@@ -1,0 +1,35 @@
+.menu-bar-white{
+    position: relative;
+    display: flex;
+    top: 10px;
+    left: 20px;
+    height: 40px;
+    
+}
+
+.img-menu-bar-white{
+    background: url(../img/Logo.svg);
+    background-size: cover;
+    width: 29.5px;
+    height: 29.5px;
+}
+
+.opacity-btn-white {
+    width: 100px;
+    height: 30px;
+    border-color: rgba(0, 0, 0, 0);
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;   
+     
+}
+
+.opacity-btn-plesure-white {
+    width: 150px;
+    height: 30px;
+    border-color: rgba(0, 0, 0, 0);
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;   
+     
+}
