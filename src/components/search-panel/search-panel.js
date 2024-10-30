@@ -17,15 +17,17 @@ class SearchPanel extends Component {
 
    } 
 
-
     render() {
          return (
-         <input type="text"
-            className="form-control search-input"
-            placeholder="Найти сотрудника"
-            value={this.state.term}
-            onChange={this.onUpdateSearch}
-            />
+          <div className = "form-control">
+               <div className = "lookingFor" >Looking for </div>
+               <input type="text"
+                     className="search-input"
+                     placeholder="Start typing here..."
+                     value={this.state.term}
+                     onChange={this.onUpdateSearch}
+               />
+          </div>
 )};
 }
     

@@ -1,3 +1,11 @@
 .footer{
     height: 150px;
 }
+
+.rectangle-logo-about-us-blck{
+    background: url("../img/Beans\ logo.svg");
+    display: block;
+    margin: 1% auto; 
+    height: 29.5px;
+    width: 200px;
+}

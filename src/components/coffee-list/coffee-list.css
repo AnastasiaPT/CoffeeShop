@@ -1,7 +1,9 @@
 .app-list {
-    margin-top: 30px;
-    background-color: #3d5a80;
-    border-radius: 4px;
-    box-shadow: 15px 15px 30px rgba(0,0,0, .15);
-    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    width: 600px;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
 }

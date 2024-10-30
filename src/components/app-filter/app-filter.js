@@ -10,31 +10,34 @@ class AppFilter extends Component {
 
    }
     onLevelUp = (e) => {
-        this.setState({filt: e.currentTarget.getAttribute('data-toggle')});
-        this.props.onFilterUp(e.currentTarget.getAttribute('data-toggle'));
+        const filtval = (this.state.filt === e.currentTarget.getAttribute('data-toggle')) ?
+            'All' : e.currentTarget.getAttribute('data-toggle');
+        this.setState({filt: filtval});
+        this.props.onFilterUp(filtval);
     } 
    
     render() {
 
     return (
         <div className="btn-group">
+             <div className = "or-filter" >Or filter </div>
             <button type="button"
-                    className={"btn" + ((this.state.filt === 'All') ?' btn-light' : ' btn-outline-light')}
+                    className={"btn" + ((this.state.filt === 'Brasil') ?'-btn-border' : '-btn-shadow')}
                     onClick={this.onLevelUp}
-                    data-toggle="All">
-                    Все сотрудники
+                    data-toggle="Brasil">
+                    Brazil
             </button>
             <button type="button"
-                    className={"btn" + ((this.state.filt === 'Rise') ?' btn-light' : ' btn-outline-light')}
+                    className={"btn" + ((this.state.filt === 'Kenya') ?'-btn-border' : '-btn-shadow')}
                     onClick={this.onLevelUp}
-                    data-toggle="Rise">
-                    На повышение
+                    data-toggle="Kenya">
+                    Kenya
             </button>
             <button type="button"
-                    className={"btn" + ((this.state.filt === 'Sal') ?' btn-light' : ' btn-outline-light')}
+                    className={"btn" + ((this.state.filt === 'Colum') ?'-btn-border' : '-btn-shadow')}
                     onClick={this.onLevelUp}
-                    data-toggle="Sal">
-                    З/П больше 1000$
+                    data-toggle="Colum">
+                    Columbia
             </button>
         </div>
     )};

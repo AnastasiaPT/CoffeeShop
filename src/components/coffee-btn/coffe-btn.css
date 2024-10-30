@@ -33,3 +33,40 @@
     box-shadow: none;   
      
 }
+
+
+.menu-bar-black{
+    position: relative;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.img-menu-bar-black{
+    background: url(../img/Logo-1.svg);
+    background-size: cover;
+    width: 29.5px;
+    height: 29.5px;
+}
+
+.opacity-btn-black {
+    width: 100px;
+    height: 30px;
+    border-color: rgba(0, 0, 0, 0);
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;   
+     
+}
+
+.opacity-btn-plesure-black {
+    width: 150px;
+    height: 30px;
+    border-color: rgba(0, 0, 0, 0);
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;   
+     
+}

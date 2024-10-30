@@ -26,7 +26,7 @@ class App extends Component {
             term: '',
             filterUp: 'all',
             modalOn: false,
-            CoffeeHouse: true,
+            CoffeeHouse: false,
             OurCoffee: true,
             Plesure: false
         }
@@ -52,10 +52,12 @@ class App extends Component {
     }
 
     VisibleFilter = (items,filtr) => {
-        if(filtr === 'Sal') {
-            return items.filter(item => item.price > 1000);
-        }else if(filtr === 'Rise') {
-            return items.filter(item => item.rise);
+        if(filtr === 'Colum') {
+            return items.filter(item => item.country ==="Columbia");
+        }else if(filtr === 'Brasil') {
+            return items.filter(item => item.country ==="Brasil");
+        }else if(filtr === 'Kenya') {
+            return items.filter(item => item.country ==="Kenya");
         }
         
         return items;        
@@ -70,19 +72,24 @@ class App extends Component {
             <div className="app">
                 {CoffeeHouse && <div className="CoffeeHouse">
                     <AppInfo/>
-                    <AboutUs/>
+                    <AboutUs CoffeeHouse={CoffeeHouse} 
+                             OurCoffee={OurCoffee}
+                             Plesure={Plesure}/>
                     <Ourbest data={VisiblLevelUpData}/>
                 </div>}
                 {OurCoffee && <div className = "Ourcoffee">
                      <HeaderCoffee/>
+                     <AboutUs CoffeeHouse={CoffeeHouse} 
+                             OurCoffee={OurCoffee}
+                             Plesure={Plesure}/>
                      <div className="search-panel">
                          <SearchPanel onUpdateSearch={this.onUpdateSearch}/>
                          <AppFilter onFilterUp={this.onFilterUp}/>
                     </div>
                 
                    <CoffeeList  data={VisiblLevelUpData}/>
-                {Plesure && <div></div>}   
                 </div>}
+                {Plesure && <div></div>}   
                 <Footer/> 
             </div>
         );

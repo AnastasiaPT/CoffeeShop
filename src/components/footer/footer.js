@@ -5,6 +5,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <CoffeeBtn color={"black"}/>
+            <div className="rectangle-logo-about-us"></div>
         </div>
     )
 }

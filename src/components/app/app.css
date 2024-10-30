@@ -2,4 +2,10 @@
     margin: 0 auto;
     max-width: 1440px;
   }
+
+  .search-panel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
   
